@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>XKCD finder</title>
+    <title>Recipes</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body style="font-family: Helvetica">
-    <h1 style="text-align: center">XKCD search</h1>
+    <h1 style="text-align: center">Search Recipes by Ingredient</h1>
 
     <form style="text-align:center">
-        <label>Enter a specific comic (current range between 0 and 1955)</label><br><br>
-        <input id="comicInput" type="text"></input>
-        <input id="comicSubmit" type="submit" value="Submit"></input>
+        <label>Enter an ingredient</label><br><br>
+        <input id="ingredInput" type="text"></input>
+        <input id="ingredSubmit" type="submit" value="Submit"></input>
     </form>
 
     <br><br>
 
-    <form style="text-align: center">
-        <label>Get a random Comic</label><br><br>
-        <!--<input id="comicRandSubmit" type="submit" value="Submit"></input> -->
-    </form>
 
-    <div id="comicResults">
+    <div id="ingredResults">
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script text="type/javascript" src="/script.js"></script>
 
     <div class="footer">
-      <a href="reddit.com">Code for this project</a>
+      <a href="https://github.com/scraven4/XKCDfinder">Code for this project</a>
     </div>
 </body>
 </html>

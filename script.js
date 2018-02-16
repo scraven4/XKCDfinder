@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-  $("#comicSubmit").click(function(e) {
+  $("#ingredSubmit").click(function(e) {
     e.preventDefault();
-    var value = $("#comicInput").val();
+    var value = $("#ingredInput").val();
     console.log(value);
 
-    var myurl= "http://xkcd.com/" + value + "/info.0.json";
+    var myurl= "http://www.recipepuppy.com/api/?i=" + value;
   	$.ajax({
   	    url : myurl,
   	    dataType : "json",
@@ -29,7 +29,7 @@ $(document).ready(function() {
         //		}
         //		results += "</p>";
         //    results += "<hr>";
-        		$("comicResults").html(results);
+        		$("ingredResults").html(results);
           }
   	});
 
